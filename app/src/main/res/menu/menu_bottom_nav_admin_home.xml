@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/type_btNav"
+        android:icon="@drawable/baseline_type_specimen_24"
+        android:title="Loại"/>
+
+    <item android:id="@+id/toy_btNav"
+        android:icon="@drawable/baseline_smart_toy_24"
+        android:title="Mô hình"/>
+
+    <item android:id="@+id/bill_btNav"
+        android:icon="@drawable/baseline_featured_play_list_24"
+        android:title="Hóa đơn"/>
+
+    <item android:id="@+id/user_btNav"
+        android:icon="@drawable/baseline_group_24"
+        android:title="Khách Hàng"/>
+</menu>

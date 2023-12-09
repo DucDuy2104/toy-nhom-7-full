@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/item_color"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    app:cardCornerRadius="20dp"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/item_color">
+
+        <androidx.cardview.widget.CardView
+            android:backgroundTint="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/img_itemMoHinh"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/baseline_account_circle_24" />
+        </androidx.cardview.widget.CardView>
+
+
+
+        <TextView
+            android:maxLines="2"
+            android:ellipsize="start"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_nameItemMoHinh"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Gundam Master Grade Gundam Unicorn 1/100"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/cardView"
+            app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+        <TextView
+            android:id="@+id/tv_rateItemMoHinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate: 4.5"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/tv_nameItemMoHinh"
+            app:layout_constraintStart_toStartOf="@+id/tv_nameItemMoHinh" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/star"
+            android:scaleType="center"
+            app:layout_constraintLeft_toRightOf="@id/tv_rateItemMoHinh"
+            app:layout_constraintTop_toTopOf="@id/tv_rateItemMoHinh"
+            app:layout_constraintBottom_toBottomOf="@id/tv_rateItemMoHinh"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="@id/tv_rateItemMoHinh"
+            app:layout_constraintTop_toBottomOf="@id/tv_rateItemMoHinh">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price: "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_priceItemMoHinh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200000"
+                android:textColor="#FF0000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_amountItemMoHinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount: 136"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sold: 0"
+            app:layout_constraintTop_toBottomOf="@id/tv_amountItemMoHinh"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="@id/tv_amountItemMoHinh"
+            android:id="@+id/tv_soldItemMoHinh"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type: Gundam"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/tv_soldItemMoHinh"
+            app:layout_constraintLeft_toLeftOf="@id/tv_soldItemMoHinh"
+            android:id="@+id/tv_typeItemMoHinh"/>
+
+        <ImageButton
+
+            android:background="@android:color/transparent"
+            android:id="@+id/btn_deleteItemMoHinh"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_delete_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

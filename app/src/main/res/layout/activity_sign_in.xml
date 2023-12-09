@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign.SignInActivity"
+    android:padding="20dp"
+    android:background="#E3EEF4">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="100dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:gravity="center"
+        android:fontFamily="@font/magis"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HI, \n WELLCOME BACK!"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:id="@+id/wellcome"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+    <EditText
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên đăng nhập"
+        android:textColorHint="@color/hint_edt"
+        android:background="@drawable/custom_edittext"
+        android:elevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/wellcome"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edt_tenDnSignIn"/>
+
+    <EditText
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mật khẩu"
+        android:background="@drawable/custom_edittext"
+        android:elevation="4dp"
+        android:textColorHint="@color/hint_edt"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/edt_tenDnSignIn"
+        android:id="@+id/edt_matKhauSignIn"/>
+
+    <Button
+        android:id="@+id/btn_signInDn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_btn_dn"
+        android:textColor="@color/black"
+        android:text="ĐĂNG NHẬP"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/edt_matKhauSignIn"
+        android:layout_marginTop="30dp"
+        android:elevation="4dp"/>
+
+    <Button
+        android:id="@+id/btn_signUpDn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_btn_dk_dn"
+        android:elevation="4dp"
+        android:paddingHorizontal="30dp"
+        android:text="ĐĂNG KÝ"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_signInDn" />
+
+    <TextView
+        android:id="@+id/dkNgay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chưa có tài khoản? Đăng ký ngay!"
+        android:textColor="#1D7FAC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_signUpDn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_signUpDn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

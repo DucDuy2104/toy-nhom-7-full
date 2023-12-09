@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/toolbar_color">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_headerNav"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/baseline_account_circle_24"
+        app:layout_constraintEnd_toEndOf="@+id/tv_nameHeaderNav"
+        app:layout_constraintStart_toStartOf="@+id/tv_nameHeaderNav"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_nameHeaderNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAME OF USER"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_headerNav" />
+
+
+    <TextView
+        android:id="@+id/tv_emailHeaderNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cvducduy@gmail.com"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_nameHeaderNav"
+        app:layout_constraintStart_toStartOf="@+id/tv_nameHeaderNav"
+        app:layout_constraintTop_toBottomOf="@id/tv_nameHeaderNav" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

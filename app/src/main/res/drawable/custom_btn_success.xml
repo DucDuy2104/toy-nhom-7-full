@@ -1,0 +1,28 @@
+<!-- res/drawable/edittext_custom_background.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#39877F" /> <!-- Màu trắng -->
+            <corners android:radius="20dp" /> <!-- Bo góc 20dp -->
+            <padding
+                android:left="10dp"
+                android:top="10dp"
+                android:right="10dp"
+                android:bottom="10dp" /> <!-- Padding để tạo khoảng trắng xung quanh nếu cần -->
+        </shape>
+    </item>
+
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/success_color" /> <!-- Màu trắng -->
+            <corners android:radius="20dp" /> <!-- Bo góc 20dp -->
+            <padding
+                android:left="10dp"
+                android:top="10dp"
+                android:right="10dp"
+                android:bottom="10dp" /> <!-- Padding để tạo khoảng trắng xung quanh nếu cần -->
+        </shape>
+    </item>
+</selector>

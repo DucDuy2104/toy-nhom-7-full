@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/drawerLayout_adminAct"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".admin.activity.AdminActivity">
+
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            app:titleTextColor="@color/black"
+            android:background="@color/toolbar_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tb_adminAct"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frLayout_adminAct"
+            android:layout_below="@id/tb_adminAct"/>
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:background="#fff"
+        app:subheaderColor="@color/black"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        android:id="@+id/drawerNav_adminAct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:menu="@menu/menu_drawer_navigation_admin"
+        app:headerLayout="@layout/header_nav"
+        android:layout_gravity="start"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

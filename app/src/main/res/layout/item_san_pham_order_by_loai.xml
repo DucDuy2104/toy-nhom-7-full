@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:elevation="4dp"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/tv_loaiItemSpByLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ribon"
+        android:text="Tên loại"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_marginRight="30dp"
+        android:id="@+id/tv_xemTatCa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xem tất cả"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_loaiItemSpByLoai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_loaiItemSpByLoai" />
+
+
+    <ImageView
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_keyboard_arrow_right_24"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_loaiItemSpByLoai"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_loaiItemSpByLoai"
+        android:id="@+id/img_arrow"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hint_edt"
+        app:layout_constraintTop_toBottomOf="@id/tv_loaiItemSpByLoai"
+        android:id="@+id/line"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/rec_sanPhamItemSpOrderByLoai"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

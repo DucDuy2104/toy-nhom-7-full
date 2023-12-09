@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:elevation="4dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="ĐỔI MẬT KHẨU"
+            android:textColor="#022C28"
+            android:id="@+id/header"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@drawable/custom_edittext"
+            android:elevation="4dp"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu"
+            android:textColorHint="@color/hint_edt"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/header"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/edt_matKhauChangePass"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu mới"
+            android:textColorHint="@color/hint_edt"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_edittext"
+            android:elevation="4dp"
+            app:layout_constraintTop_toBottomOf="@id/edt_matKhauChangePass"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edt_newMkChangePass"/>
+
+            <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu mới"
+            android:textColorHint="@color/hint_edt"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_edittext"
+            android:elevation="4dp"
+            app:layout_constraintTop_toBottomOf="@id/edt_newMkChangePass"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edt_reNewMkChangePass"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintRight_toLeftOf="@id/btn_changePass"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_reNewMkChangePass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btn_cancel"
+            android:text="HỦY"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_huyChangePass"/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintLeft_toRightOf="@id/btn_huyChangePass"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_reNewMkChangePass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_oke"
+            android:text="ĐỔI MẬT KHẨU"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_changePass"/>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

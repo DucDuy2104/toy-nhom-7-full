@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/item_color"
+    android:paddingBottom="20dp">
+
+    <View
+        android:layout_marginRight="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_dateItemBill"
+        app:layout_constraintTop_toTopOf="@id/tv_dateItemBill"
+        app:layout_constraintBottom_toBottomOf="@id/tv_dateItemBill"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:id="@+id/view1"/>
+
+    <View
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_dateItemBill"
+        app:layout_constraintTop_toTopOf="@id/tv_dateItemBill"
+        app:layout_constraintBottom_toBottomOf="@id/tv_dateItemBill"
+        android:layout_marginLeft="10dp"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:id="@+id/view2"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_dateItemBill"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hôm nay lúc 20:19:55"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:background="@drawable/custom_background_item_bill"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/constraint"
+        app:layout_constraintLeft_toLeftOf="@id/constraint"
+        app:layout_constraintRight_toRightOf="@id/constraint"
+        android:id="@+id/rec_itemBillUser"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/constraint"
+        android:background="@drawable/custom_background_item_bill"
+        android:padding="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_dateItemBill"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số sản phẩm: "
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/soLuong"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thành tiền: "
+            android:id="@+id/thanhTien"
+            app:layout_constraintTop_toBottomOf="@id/soLuong"
+            app:layout_constraintLeft_toLeftOf="@id/soLuong"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tình trạng: "
+            android:id="@+id/tinhTrang"
+            app:layout_constraintTop_toBottomOf="@id/thanhTien"
+            app:layout_constraintLeft_toLeftOf="@id/thanhTien"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/soLuong"
+            app:layout_constraintLeft_toRightOf="@id/soLuong"
+            app:layout_constraintBottom_toBottomOf="@id/soLuong"
+            android:id="@+id/tv_soLuongItemBill"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120000đ"
+            android:textColor="#D10000"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/thanhTien"
+            app:layout_constraintBottom_toBottomOf="@id/thanhTien"
+            app:layout_constraintLeft_toRightOf="@id/thanhTien"
+            android:id="@+id/tv_thanhTienItemBill"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đang chờ xác nhận từ người bán..."
+            android:id="@+id/tv_tinhTrangItemBill"
+            app:layout_constraintTop_toTopOf="@id/tinhTrang"
+            app:layout_constraintBottom_toBottomOf="@id/tinhTrang"
+            app:layout_constraintLeft_toLeftOf="@id/tinhTrang"
+            android:textColor="@color/black"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="HỦY ĐƠN"
+        android:id="@+id/btn_huyDonItemBill"
+        android:background="@drawable/custom_btn_huy_don"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/constraint"
+        app:layout_constraintRight_toRightOf="@id/constraint"
+        app:layout_constraintTop_toBottomOf="@id/rec_itemBillUser"/>
+
+    <Button
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ĐẶT LẠI"
+        android:id="@+id/btn_datLaiItemBillUser"
+        android:background="@drawable/custom_btn_dat_lai"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/constraint"
+        app:layout_constraintRight_toRightOf="@id/constraint"
+        app:layout_constraintTop_toBottomOf="@id/rec_itemBillUser"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

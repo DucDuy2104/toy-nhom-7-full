@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/item_color"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/gundam1"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/img_itemSubBillUser"/>
+
+    <TextView
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="NAME OF TOY"
+        android:id="@+id/tv_nameItemSubBill"
+        android:textColor="@color/black"
+        android:fontFamily="@font/magis"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/img_itemSubBillUser"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số lượng: "
+        android:id="@+id/soLuong"
+        app:layout_constraintTop_toBottomOf="@id/tv_nameItemSubBill"
+        app:layout_constraintLeft_toLeftOf="@id/tv_nameItemSubBill"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thành tiền: "
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/soLuong"
+        app:layout_constraintLeft_toLeftOf="@id/soLuong"
+        android:id="@+id/thanhTien"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/soLuong"
+        app:layout_constraintLeft_toRightOf="@id/soLuong"
+        app:layout_constraintBottom_toBottomOf="@id/soLuong"
+        android:id="@+id/tv_soLuongItemSubBill"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1200000đ"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:id="@+id/tv_thanhTienItemSubBill"
+        app:layout_constraintTop_toTopOf="@id/thanhTien"
+        app:layout_constraintBottom_toBottomOf="@id/thanhTien"
+        app:layout_constraintLeft_toRightOf="@id/thanhTien"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:id="@+id/drawerLayout_userAct"
+    tools:context=".customer.activity.UserActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:background="@color/toolbar_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tbar_userAct"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tbar_userAct"
+            android:id="@+id/fr_userActivity"/>
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:background="#fff"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:subheaderColor="@color/black"
+        app:headerLayout="@layout/header_nav"
+        android:id="@+id/navView_userAct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:menu="@menu/menu_drawer_nav_user"
+        android:layout_gravity="start"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

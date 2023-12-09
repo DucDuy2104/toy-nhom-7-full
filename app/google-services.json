@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "970284181404",
+    "project_id": "stoy-b38d8",
+    "storage_bucket": "stoy-b38d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970284181404:android:5098de170e4dac8a06ca59",
+        "android_client_info": {
+          "package_name": "com.example.duanmau1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0N8QTI3oHSXyHInx20bLFEheLOV7fMqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

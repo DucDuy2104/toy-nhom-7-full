@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/behind_user_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/custom_background_img_info"
+        android:src="@drawable/gundam1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="75dp"
+        android:elevation="4dp"
+        android:id="@+id/img_infoUser"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_marginTop="150dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:paddingBottom="20dp"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/baseline_settings_suggest_24"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_margin="10dp"
+                android:id="@+id/btn_suaInforUser"/>
+
+
+            <TextView
+                android:layout_marginTop="95dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAME OFF USER"
+                android:id="@+id/tv_nameUserInfo"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cvducduy@gmail.com"
+                android:textColor="@color/txt_color"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/tv_nameUserInfo"
+                app:layout_constraintLeft_toLeftOf="@id/tv_nameUserInfo"
+                app:layout_constraintRight_toRightOf="@id/tv_nameUserInfo"
+                android:id="@+id/tv_emailUserInfo"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/txt_color"
+                android:alpha="0.6"
+                android:id="@+id/line"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_emailUserInfo"
+                android:layout_marginTop="10dp"/>
+
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_man_24"
+                app:layout_constraintTop_toBottomOf="@id/line"
+                android:layout_marginTop="20dp"
+                android:id="@+id/iconSex"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_phone_android_24"
+                app:layout_constraintTop_toBottomOf="@id/iconSex"
+                app:layout_constraintLeft_toLeftOf="@id/iconSex"
+                android:layout_marginTop="25dp"
+                android:id="@+id/iconP"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_calendar_month_24"
+                app:layout_constraintTop_toBottomOf="@id/iconP"
+                app:layout_constraintLeft_toLeftOf="@id/iconP"
+                android:layout_marginTop="25dp"
+                android:id="@+id/iconcalender"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_share_location_24"
+                android:id="@+id/iconloc"
+                app:layout_constraintTop_toBottomOf="@id/iconcalender"
+                app:layout_constraintLeft_toLeftOf="@id/iconcalender"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giới tính"
+                android:textColor="@color/txt_color"
+                app:layout_constraintTop_toTopOf="@id/iconSex"
+                app:layout_constraintLeft_toRightOf="@id/iconSex"
+                android:layout_marginLeft="5dp"
+                app:layout_constraintBottom_toBottomOf="@id/iconSex"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số điện thoại"
+                app:layout_constraintTop_toTopOf="@id/iconP"
+                app:layout_constraintBottom_toBottomOf="@id/iconP"
+                app:layout_constraintLeft_toRightOf="@id/iconP"
+                android:textColor="@color/txt_color"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                app:layout_constraintBottom_toBottomOf="@id/iconcalender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày sinh"
+                android:textColor="@color/txt_color"
+                app:layout_constraintTop_toTopOf="@id/iconcalender"
+                app:layout_constraintLeft_toRightOf="@id/iconcalender"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Địa chỉ"
+                android:textColor="@color/txt_color"
+                app:layout_constraintBottom_toBottomOf="@id/iconloc"
+                app:layout_constraintLeft_toRightOf="@id/iconloc"
+                app:layout_constraintTop_toTopOf="@id/iconloc" />
+
+            <EditText
+                android:id="@+id/edt_gioiTinhInfoUser"
+                android:layout_width="150dp"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:text="Nam"
+                android:textColor="@color/txt_color"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:background="@drawable/custom_edittext"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/iconSex"
+                app:layout_constraintBottom_toBottomOf="@id/iconSex"
+                android:layout_marginRight="20dp"/>
+            <EditText
+                android:id="@+id/edt_phoneInfoUser"
+                android:layout_width="150dp"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:text="35352354"
+                android:textColor="@color/txt_color"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:background="@drawable/custom_edittext"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/iconP"
+                app:layout_constraintBottom_toBottomOf="@id/iconP"
+                android:layout_marginRight="20dp"/>
+
+            <EditText
+                android:layout_width="150dp"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:text="21.04.2004"
+                android:textColor="@color/txt_color"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:background="@drawable/custom_edittext"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/iconcalender"
+                app:layout_constraintBottom_toBottomOf="@id/iconcalender"
+                android:id="@+id/edt_birthInfoUser"
+                android:layout_marginRight="20dp"/>
+
+            <EditText
+                android:ellipsize="end"
+                android:id="@+id/edt_diaChiInfoUser"
+                android:layout_width="150dp"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edittext"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="Cam Ranh, Khánh Hòa"
+                android:textColor="@color/txt_color"
+                app:layout_constraintBottom_toBottomOf="@id/iconloc"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/iconloc" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/custom_bottom_behind_info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView"
+        android:layout_marginTop="-100dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_btn_sua"
+        android:text="SỬA THÔNG TIN"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/btn_updateInfoUser"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
